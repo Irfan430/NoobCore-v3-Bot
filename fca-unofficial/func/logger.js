@@ -32,17 +32,20 @@ const co = buildGradient(themeName);
 
 module.exports = (text, type) => {
   const s = String(type || "info").toLowerCase();
+  const timestamp = new Date().toLocaleTimeString();
+  const prefix = `[ ${timestamp} ] [ FCA ]`;
+  
   if (s === "warn") {
-    process.stderr.write(co(`\r[ FCA-WARN ] > ${text}`) + "\n");
+    process.stderr.write(co(`\r${prefix} [ WARN ] > ${text}`) + "\n");
     return;
   }
   if (s === "error") {
-    process.stderr.write(chalk.bold.hex("#ff0000")(`\r[ FCA-ERROR ]`) + ` > ${text}\n`);
+    process.stderr.write(chalk.bold.hex("#ff0000")(`\r${prefix} [ ERROR ]`) + ` > ${text}\n`);
     return;
   }
   if (s === "info") {
-    process.stderr.write(chalk.bold(co(`\r[ FCA-UNO ] > ${text}`)) + "\n");
+    process.stderr.write(chalk.bold(co(`\r${prefix} [ INFO ] > ${text}`)) + "\n");
     return;
   }
-  process.stderr.write(chalk.bold(co(`\r[ ${s.toUpperCase()} ] > ${text}`)) + "\n");
+  process.stderr.write(chalk.bold(co(`\r${prefix} [ ${s.toUpperCase()} ] > ${text}`)) + "\n");
 };
