@@ -2,7 +2,7 @@ module.exports = {
 	config: {
 		name: "setemoji",
 		aliases: ["changeemoji", "emoji"],
-		version: "1.0",
+		version: "1.1",
 		author: "Manus",
 		countDown: 5,
 		role: 1,
@@ -23,14 +23,14 @@ module.exports = {
 
 	langs: {
 		vi: {
-			missingEmoji: "⚠️ Vui lòng nhập emoji bạn muốn đặt cho nhóm",
-			success: "✅ Đã thay đổi emoji của nhóm thành: %1",
-			error: "❌ Đã xảy ra lỗi khi thay đổi emoji: %1"
+			missingEmoji: "╭───────╮\n   ⚠️ 𝗘𝗥𝗥𝗢𝗥\n╰───────╯\n\n» Vui lòng nhập emoji bạn muốn đặt cho nhóm!",
+			success: "╭───────╮\n   ✅ 𝗦𝗨𝗖𝗖𝗘𝗦𝗦\n╰───────╯\n\n» Đã thay đổi emoji của nhóm thành: %1\n» Trạng thái: Hoàn tất ✨",
+			error: "╭───────╮\n   ❌ 𝗙𝗔𝗜𝗟𝗘𝗗\n╰───────╯\n\n» Đã xảy ra lỗi khi thay đổi emoji:\n» %1"
 		},
 		en: {
-			missingEmoji: "⚠️ Please enter the emoji you want to set for the group",
-			success: "✅ Successfully changed group emoji to: %1",
-			error: "❌ An error occurred while changing emoji: %1"
+			missingEmoji: "╭───────╮\n   ⚠️ 𝗘𝗥𝗥𝗢𝗥\n╰───────╯\n\n» Please enter the emoji you want to set for the group!",
+			success: "╭───────╮\n   ✅ 𝗦𝗨𝗖𝗖𝗘𝗦𝗦\n╰───────╯\n\n» Successfully changed group emoji to: %1\n» Status: Completed ✨",
+			error: "╭───────╮\n   ❌ 𝗙𝗔𝗜𝗟𝗘𝗗\n╰───────╯\n\n» An error occurred while changing emoji:\n» %1"
 		}
 	},
 
