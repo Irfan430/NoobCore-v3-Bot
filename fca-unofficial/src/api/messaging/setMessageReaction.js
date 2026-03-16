@@ -57,7 +57,7 @@ module.exports = function (defaultFuncs, api, ctx) {
         payload: JSON.stringify({
           epoch_id: parseInt(generateOfflineThreadingID()),
           tasks: [task],
-          version_id: "24585299697835063"
+          version_id: "8798795233522156" // Updated to latest version_id
         }),
         request_id: reqID,
         type: 3

@@ -33,7 +33,7 @@ module.exports = (defaultFuncs, api, ctx) => {
           queue_name: 'edit_message',
           task_id: ++ctx.wsTaskNumber,
         }],
-        version_id: '6903494529735864',
+        version_id: '8798795233522156', // Updated to latest version_id
       }),
       request_id: ++ctx.wsReqNumber,
       type: 3
